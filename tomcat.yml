@@ -1,7 +1,7 @@
 - hosts: test
 
   tasks:
-    - name: download tomcat from dlcdn
+    - name: download tomcat from dlcdn website
       get_url:
         url: "http://dlcdn.apache.org/tomcat/tomcat-9/v9.0.78/bin/apache-tomcat-9.0.78.tar.gz"
         dest: "/root/"
