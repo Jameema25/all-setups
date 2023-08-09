@@ -3,13 +3,13 @@
   tasks:
     - name: download tomcat from dlcdn
       get_url:
-        url: "http://dlcdn.apache.org/tomcat/tomcat-9/v9.0.78/bin/apache-tomcat-9.0.78-deployer.tar.gz"
+        url: "http://dlcdn.apache.org/tomcat/tomcat-9/v9.0.78/bin/apache-tomcat-9.0.78.tar.gz"
         dest: "/root/"
 
     - name: untar the apache file
-      command: tar -zxvf apache-tomcat-9.0.78-deployer.tar.gz
+      command: tar -zxvf apache-tomcat-9.0.78.tar.gz
         #unarchive:
-        #src: "apache-tomcat-9.0.78-deployer.tar.gz"
+        #src: "apache-tomcat-9.0.78.tar.gz"
         #dest: "/root/"
 
     - name: rename the tomcat
